@@ -3,7 +3,7 @@
   requirement: |
     Пользователь должен иметь возможность зарегистрироваться на сайте
   prerequisites: | 
-    Открыта страница сайта https://codebattle.hexlet.io/
+    Открыта страница сайта https://codebattle.hexlet.io
   test-data: |
     No data
   steps: 
@@ -21,7 +21,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте с помощью Github
   prerequisites: |
-    Открыта страница сайта https://codebattle.hexlet.io/
+    Открыта страница сайта https://codebattle.hexlet.io
   test-data: |
     Пользователь должен иметь аккаунт на Github
   steps:
@@ -35,7 +35,7 @@
   requirement: |
     Пользователь должен иметь возможность отключить аккаунт Github от своего профиля
   prerequisites: |
-    Открыта страница сайта https://codebattle.hexlet.io/#lobby
+    Открыта страница сайта https://codebattle.hexlet.io
     Пользователь авторизован с помощью Github
   test-data: |
     аккаунт на Github
@@ -51,7 +51,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте с помощью Discord
   prerequisites: 
-    Открыта страница сайта https://codebattle.hexlet.io/
+    Открыта страница сайта https://codebattle.hexlet.io
   test-data: |
     Пользователь должен иметь аккаунт на Discord
   steps:
@@ -65,7 +65,7 @@
   requirement: |
     Пользователь дожен иметь возможность отключить аккаунт Discord от своего профиля
   prerequisites:
-    Открыта страница сайта https://codebattle.hexlet.io/#lobby
+    Открыта страница сайта https://codebattle.hexlet.io
     Пользователь авторизован с помощью Github
   test-data: |
     аккаунт на Discord
@@ -81,7 +81,7 @@
   requirement: |
     При регистрации уже существующих данных появляется сообщение об ошибке
   prerequisites: | 
-    Открыта страница сайта https://codebattle.hexlet.io/
+    Открыта страница сайта https://codebattle.hexlet.io
   test-data: |
     аккаунт Codebattle
   steps:
@@ -115,10 +115,9 @@
   requirement: |
     При входе пользователя через электронную почту появляется сообщение об успешной аутентификации на сайте 
   prerequisites: | 
-    Открыта страница сайта https://codebattle.hexlet.io/
+    Открыта страница сайта https://codebattle.hexlet.io
   test-data: |
-    Email = alis_med@mail.ru 
-    Password = am24475
+    no-data
   steps:
     - нажать на кнопку "Sign In"
     - заполнить поле "Email" 
@@ -132,7 +131,7 @@
   requirement: |
     Пользователь должен иметь возможность восстановить пароль на сайте
   prerequisites: | 
-    Открыта страница сайта https://codebattle.hexlet.io/
+    Открыта страница сайта https://codebattle.hexlet.io
   test-data: |
     no-data
   steps:
@@ -189,7 +188,7 @@
   requirement: |
     Пользователь может создать новую игру с другими пользователями 
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
   test-data: |
     - Сложность игры = 1 звезда
@@ -233,11 +232,11 @@
     Игра с ботом с выбранными параметрами успешно создана  
 
 - summary: |
-    Проверка создания новой игры с другом
+    Проверка создания новой игры с другом по ссылке
   requirement: |
     Пользователь должен иметь возмонжность играть с другом по ссылке
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
   test-data: |
     no-data
@@ -256,7 +255,7 @@
   requirement: |
     Пользователь может отменить приглашение друга в игру
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
     Создано и отправлено  приглашение другу
   test-data: |
@@ -274,7 +273,7 @@
   requirement: |
     Пользователь может выбрать язык задания в запущенной игре
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
   test-data: |
     создана игра
@@ -290,7 +289,7 @@
   requirement: |
     Пользователь должен иметь возможность видеть написание кода соперника
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
   test-data: |
     создана игра
@@ -304,7 +303,7 @@
   requirement: |
     Пользователь должен иметь возможность остановить игру
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/games/145159/
+    Открыта игра
     Пользователь авторизован
   test-data: |
     - создана игра 
@@ -314,11 +313,11 @@
     Игра успешно остановлена, пользователь возвращается на страницу со списком игр
 
 - summary: |
-    Проверка возможности сдачи в игре
+    Проверка возможности сдаться в игре
   requirement: |
     Пользователь должен иметь возможность сдаться и завершить игру в любой момент
   prerequisites:
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
     Игра создана
   test-data: |
@@ -329,11 +328,11 @@
     Игра закончена, отображается сообщение о проигрыше сдавшегося игрока
 
 - summary: |
-    Проверка отправления сообщений другим игрокам
+    Проверка отправления сообщений другим игрокам в общем чате
   requirement: |
     Пользователь должен иметь возможность отправлять сообщения в общий чат
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
   test-data: |
     no data
@@ -348,7 +347,7 @@
   requirement: |
     Пользователь должен иметь возможность отправлять личные сообщения другому игроку
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
   test-data: |
     список онлайн-игроков
@@ -365,7 +364,7 @@
   requirement: |
     Пользовател может отпрпавить сообщение в чат не более 1024 символов
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
   test-data: |
     количество символов в сообщении = 1200
@@ -380,7 +379,7 @@
   requirement: |
     Пользователь может просматривать историю своих игр
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
   test-data: |
     no data
@@ -396,7 +395,7 @@
   requirement: |
     Пользователь должен иметь возможность создать новый пакет задач
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/
+    Открыта страница https://codebattle.hexlet.io
     Пользователь авторизован
   test-data: |
     имя пакета задач = деление
@@ -419,7 +418,7 @@
   requirement: |
     Пользователь должен иметь возможность создать новый турнир
   prerequisites: | 
-    Открыта страница https://codebattle.hexlet.io/
+    Открыта страница https://codebattle.hexlet.io
     пользователь авторизован
   test-data: |
     название турнира = My fancy tournament
@@ -467,7 +466,7 @@
     Турнир не создан, появляется сообщение об ошибке
 
 - summary: |
-    Проверка возможности участия пользователя  в турнире
+    Проверка возможности участия пользователя в турнире
   requirement: |
     Пользователь должен иметь возможность участвовать в активных  турнирах
   prerequisites: |
@@ -503,7 +502,7 @@
     При выборе разных мобильных устройств страница сайта, кнопки и чаты  отображаются корректно
 
 - summary: |
-    Проверка действительности SSL-сертификата сайта   
+    Проверка SSL-сертификата  
   requirement: | 
     SSL-сертификат должен быть действительным   
   prerequisites: |
